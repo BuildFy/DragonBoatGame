@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:background="@color/purple_200"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+      android:id="@+id/img_back"
+      android:layout_width="50dp"
+      android:layout_height="47dp"
+      android:background="@color/purple_200"
+      android:paddingHorizontal="14dp"
+      android:src="?attr/homeAsUpIndicator"
+      android:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="47dp"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:text="粽卡图鉴"
+      android:textColor="@color/white"
+      android:textSize="18dp"
+      android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/tv_switch"
+      android:layout_width="50dp"
+      android:visibility="gone"
+      android:layout_height="match_parent"
+      android:layout_gravity="end"
+      android:gravity="center"
+      android:text="切换"
+      android:textColor="@color/white"
+      android:textSize="14dp" />
+
+
+  </FrameLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/banner"
+    android:layout_marginHorizontal="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>

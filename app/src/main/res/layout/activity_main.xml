@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="47dp"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:text="赛龙舟"
+      android:textColor="@color/white"
+      android:textSize="18dp"
+      android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/bt_config"
+      android:layout_width="wrap_content"
+      android:layout_height="47dp"
+      android:layout_gravity="end"
+      android:background="@color/purple_200"
+      android:gravity="center"
+      android:text="选项"
+      android:textColor="@color/white"
+      android:textSize="14dp"
+      android:textStyle="bold" />
+  </FrameLayout>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@mipmap/img" />
+
+    <com.example.dragonboatgame.DragonBoatView
+      android:id="@+id/game_dragon_boat"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <com.example.dragonboatgame.GameTipView
+      android:id="@+id/game_tip"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  </FrameLayout>
+</LinearLayout>
